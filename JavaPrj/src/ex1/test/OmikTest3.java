@@ -7,7 +7,7 @@ public class OmikTest3 {
 	public static void main(String[] args) {
 
 		char[][] board = new char[10][10];
-
+		
 		for (int y = 1; y <= 10; y++) {
 			for (int x = 1; x <= 10; x++) {
 				board[y - 1][x - 1] = '┼';
@@ -116,3 +116,4 @@ public class OmikTest3 {
 		System.out.println("ㅂㅂ");
 	}
 }
+
