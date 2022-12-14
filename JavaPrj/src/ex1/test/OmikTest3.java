@@ -7,7 +7,7 @@ public class OmikTest3 {
 	public static void main(String[] args) {
 
 		char[][] board = new char[10][10];
-		
+
 		for (int y = 1; y <= 10; y++) {
 			for (int x = 1; x <= 10; x++) {
 				board[y - 1][x - 1] = '┼';
@@ -37,20 +37,20 @@ public class OmikTest3 {
 //		board[44] = '○';
 //		board[(5 - 1) * 10 + (6 - 1)] = '○';
 		{
-			
-		for (int y = 1; y <= 10; y++) { //출력
-			for (int x = 1; x <= 10; x++) {
-				System.out.printf("%c", board[y - 1][x - 1]);
+
+			for (int y = 1; y <= 10; y++) { // 출력
+				for (int x = 1; x <= 10; x++) {
+					System.out.printf("%c", board[y - 1][x - 1]);
+				}
+				System.out.println();
 			}
-			System.out.println();
+
 		}
-		
-		}
-		
+
 		int end = 1;
 		boolean cr = true;
 		while (end == 1) {
-			
+
 			int ox, oy;
 			Scanner scan = new Scanner(System.in);
 
@@ -69,7 +69,6 @@ public class OmikTest3 {
 					continue;
 				}
 				break;
-
 			}
 
 			System.out.print("세로 칸: >");
@@ -87,17 +86,36 @@ public class OmikTest3 {
 					continue;
 				}
 				break;
+			}
+			//돌 중복
+			
+			if (board[oy][ox]=='●' || board[oy][ox]=='○') {
+				System.out.println("이미 돌이 존재합니다.");
+				continue;
+			}
 
+			{//흑백
+				if (cr == true) {
+					board[oy][ox] = '●';
+				} else {
+					board[oy][ox] = '○';
+				} cr = !cr;
 			}
 			
-			if (cr == true) {
-				board[oy][ox] = '●';
-				cr = false;			
-			} else {
-				board[oy][ox] = '○';
-				cr = true;
+//				cr ? board[oy][ox] = '●' : board[oy][ox] = '○';
+			
+
+			{
+				// win 변수로 while break 후 끝단에서 한번 더 체크로 종료와 승리 표시
+				// 가로 세로 대각선 20가지 승리 경우의 수로 win 값 생성
+				// 흑백 boolean 임시 변수로 win 값 생성 경우의 수 비교에 활용
+				
+				
+				
+				
 			}
-		
+			
+			
 			{
 
 				for (int y = 1; y <= 10; y++) { // 출력
