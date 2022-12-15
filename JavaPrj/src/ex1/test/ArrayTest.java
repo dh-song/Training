@@ -38,5 +38,10 @@ public class ArrayTest {
 		}
 
 	}
+	
+	double cnt = print (true, 4.0, names);
+	
+	 double print(boolean a, dobule b ,char[][] c)
+			return 2.2;
 
 }
