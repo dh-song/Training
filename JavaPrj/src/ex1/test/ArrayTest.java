@@ -4,16 +4,23 @@ import java.util.Random;
 
 public class ArrayTest {
 
+	static void printNums(int[] a) {
+		
+		for (int i = 0; i < a.length; i++) {
+			System.out.printf("%d", a[i]);
+			if (i != (a.length - 1)) {
+				System.out.print(",");
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
 			
 		int[] nums = {20,5,7,98,45,7,45,62,12,47};
 		
-		for (int i = 0; i < nums.length; i++) {
-			System.out.printf("%d", nums[i]);
-			if (i != (nums.length - 1)) {
-				System.out.print(",");
-			}
-		}
+		printNums(nums);
+		
+
 		Random rand = new Random();
 		int s = rand.nextInt(10);
 		int d = rand.nextInt(10);
