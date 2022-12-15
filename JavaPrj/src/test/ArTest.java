@@ -55,5 +55,9 @@ public class ArTest {
 			out.close();
 			System.out.println("저장 완료");
 		}
+		
+		
+		
+		
 	}
 }

@@ -49,6 +49,8 @@ public class OmikTest3 {
 
 		int end = 1;
 		boolean cr = true;
+		int winc = 0;
+		HOME:
 		while (end == 1) {
 
 			int ox, oy;
@@ -56,6 +58,7 @@ public class OmikTest3 {
 
 			System.out.print("가로 칸: >");
 //		ox = scan.nextInt() - 1;
+			
 			while (true) {
 				try {
 					ox = scan.nextInt() - 1;
@@ -105,16 +108,6 @@ public class OmikTest3 {
 //				cr ? board[oy][ox] = '●' : board[oy][ox] = '○';
 			
 
-			{
-				// win 변수로 while break 후 끝단에서 한번 더 체크로 종료와 승리 표시
-				// 가로 세로 대각선 20가지 승리 경우의 수로 win 값 생성
-				// 흑백 boolean 임시 변수로 win 값 생성 경우의 수 비교에 활용
-				
-				
-				
-				
-			}
-			
 			
 			{
 
@@ -126,12 +119,131 @@ public class OmikTest3 {
 				}
 
 			}
-			System.out.print("종료(0), 계속(1)>");
+			
+			
+			
+			{
+				// winc 변수로 메인 반복문 break 후 끝단에서 한번 더 체크로 종료와 승리 표시
+				// 가로 세로 대각선 20가지 승리 경우의 수
+				// false 면 break 방식
+				// 가로ox 세로oy 판board[oy][ox]
+				
+				//가로
+				
+				for (int j = 0; j < 5; j++) {
+					for (int i = 1; i < 5 ; i++) {
+						if(ox-j >= 0 && ox-j < 10 && ox-j+i >= 0 && ox-j+i < 10) {
+							if(board[oy][ox-j] != board[oy][ox-j+i]) {
+								winc = 0;
+								break;
+							}winc ++; //확인
+							if (winc == 4) {
+								break HOME;
+								}
+						} else {
+							winc = 0;
+							break;
+						}	
+					}
+				}
+				
+				//세로
+
+				for (int j = 0; j < 5; j++) {
+					for (int i = 1; i < 5 ; i++) {
+						if(oy-j >= 0 && oy-j < 10 && oy-j+i >= 0 && oy-j+i < 10) {
+							if(board[oy-j][ox] != board[oy-j+i][ox]) {
+								winc = 0;
+								break;
+							}winc ++; //확인
+							if (winc == 4) {
+								break HOME;
+								}
+						} else {
+							winc = 0;
+							break;
+						}	
+					}
+				}
+
+				// 대각선 상승
+				
+				for (int j = 0; j < 5; j++) {
+					for (int i = 1; i < 5; i++) {
+						
+						if (oy + j >= 0 
+								&& oy + j < 10 
+								&& ox - j >= 0 
+								&& ox - j < 10 
+								&& oy + j - i >= 0
+								&& oy + j - i < 10 
+								&& ox - j + i >= 0 
+								&& ox - j + i < 10) {
+							
+							if (board[oy + j][ox - j] != board[oy + j - i][ox - j + i]) {
+								winc = 0;
+								break;
+							}
+							winc++; // 확인
+							if (winc == 4) {
+								break HOME;
+							}
+						} else {
+							winc = 0;
+							break;
+						}
+					}
+				}
+				
+				// 대각선 하락
+				
+				for (int j = 0; j < 5; j++) {
+					for (int i = 1; i < 5; i++) {
+						
+						if (oy - j >= 0 
+								&& oy - j < 10 
+								&& ox - j >= 0 
+								&& ox - j < 10 
+								&& oy - j + i >= 0
+								&& oy - j + i < 10 
+								&& ox - j + i >= 0 
+								&& ox - j + i < 10) {
+							
+							if (board[oy - j][ox - j] != board[oy - j + i][ox - j + i]) {
+								winc = 0;
+								break;
+							}
+							winc++; // 확인
+							if (winc == 4) {
+								break HOME;
+							}
+						} else {
+							winc = 0;
+							break;
+						}
+					}
+				}
+				
+				
+				
+				
+				
+			}
+				
+			System.out.print("종료(아무숫자), 계속(1)>");
 			end = scan.nextInt();
 
 		}
-		cr = true;
+		if (winc == 4) {
+			if(cr==true) {
+				System.out.println("○ 승리");
+			} else if(cr==false) {
+				System.out.println("● 승리");
+			}
+			
+		} else {
 		System.out.println("ㅂㅂ");
+		}
 	}
 }
 
