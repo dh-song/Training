@@ -26,7 +26,7 @@ public class BasicFunction {
 		result = f1(add(2, 3)) - 23 + 345 - 23 + add(2, 3);
 
 		System.out.printf("result is %d\n", result);
+		
 
-	}
-
+}
 }

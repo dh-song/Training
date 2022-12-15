@@ -3,62 +3,33 @@ package ex1.test;
 import java.util.Scanner;
 
 public class OmikTest3 {
+	
 
 	public static void main(String[] args) {
 
 		char[][] board = new char[10][10];
 
-		for (int y = 1; y <= 10; y++) {
-			for (int x = 1; x <= 10; x++) {
-				board[y - 1][x - 1] = '┼';
-//				System.out.printf("%c", board[i][j]);
-			}
-		}
+		initBoard(board);
 
-		for (int y = 1; y <= 10; y++) {
-			for (int x = 1; x <= 10; x++) {
-				board[0][x - 1] = '┬';
-				board[10 - 1][x - 1] = '┴';
-				if (x == 1) {
-					board[0][x - 1] = '┌';
-					board[y - 1][x - 1] = '├';
-					board[10 - 1][x - 1] = '└';
-				}
-				if (x == 10) {
-					board[0][x - 1] = '┐';
-					board[y - 1][x - 1] = '┤';
-					board[10 - 1][x - 1] = '┘';
+		printBoard(board);
 
-				}
-//				System.out.printf("%c", board[i][j]);
-			}
-		}
 
-//		board[44] = '○';
-//		board[(5 - 1) * 10 + (6 - 1)] = '○';
-		{
-
-			for (int y = 1; y <= 10; y++) { // 출력
-				for (int x = 1; x <= 10; x++) {
-					System.out.printf("%c", board[y - 1][x - 1]);
-				}
-				System.out.println();
-			}
-
-		}
 
 		int end = 1;
 		boolean cr = true;
 		int winc = 0;
+		Scanner scan = new Scanner(System.in);
+		int ox, oy;
 		HOME:
 		while (end == 1) {
 
-			int ox, oy;
-			Scanner scan = new Scanner(System.in);
-
-			System.out.print("가로 칸: >");
-//		ox = scan.nextInt() - 1;
 			
+			
+			
+			
+			inputOmockOnBoard();
+			
+			System.out.print("가로 칸: >");
 			while (true) {
 				try {
 					ox = scan.nextInt() - 1;
@@ -75,7 +46,6 @@ public class OmikTest3 {
 			}
 
 			System.out.print("세로 칸: >");
-//		oy = scan.nextInt() - 1;
 			while (true) {
 				try {
 					oy = scan.nextInt() - 1;
@@ -109,16 +79,7 @@ public class OmikTest3 {
 			
 
 			
-			{
-
-				for (int y = 1; y <= 10; y++) { // 출력
-					for (int x = 1; x <= 10; x++) {
-						System.out.printf("%c", board[y - 1][x - 1]);
-					}
-					System.out.println();
-				}
-
-			}
+			printBoard(board);
 			
 			
 			
@@ -245,5 +206,47 @@ public class OmikTest3 {
 		System.out.println("ㅂㅂ");
 		}
 	}
+
+private static void inputOmockOnBoard() {
+		// TODO Auto-generated method stub
+		
+	}
+
+//	------------------------------------------------------매서드
+	private static void printBoard(char[][] board) {
+		for (int y = 1; y <= 10; y++) { // 출력
+			for (int x = 1; x <= 10; x++) {
+				System.out.printf("%c", board[y - 1][x - 1]);
+			}
+			System.out.println();
+		}
+	}
+
+	private static void initBoard(char[][] board) {
+		for (int y = 1; y <= 10; y++) {
+			for (int x = 1; x <= 10; x++) {
+				board[y - 1][x - 1] = '┼';
+			}
+		}
+		for (int y = 1; y <= 10; y++) {
+			for (int x = 1; x <= 10; x++) {
+				board[0][x - 1] = '┬';
+				board[10 - 1][x - 1] = '┴';
+				if (x == 1) {
+					board[0][x - 1] = '┌';
+					board[y - 1][x - 1] = '├';
+					board[10 - 1][x - 1] = '└';
+				}
+				if (x == 10) {
+					board[0][x - 1] = '┐';
+					board[y - 1][x - 1] = '┤';
+					board[10 - 1][x - 1] = '┘';
+				}
+			}
+		}
+		System.out.println("초기화 완료");
+	}
+		
+	
 }
 
