@@ -12,7 +12,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class ArTest3 {
-
+	
 	public static void main(String[] args) throws IOException {
 
 
@@ -37,7 +37,8 @@ public class ArTest3 {
 		// 2. bitmap이라는 이름으로 20X10크기의 정수를 담을 수 있는 이차원 배열을 생성하시오.
 
 		int[][] bitmap = new int[10][20];
-
+		
+		//예제 값 입력
 		{
 			FileInputStream fis = new FileInputStream("res/bitmap.txt");
 			Scanner scan = new Scanner(fis);
@@ -49,13 +50,9 @@ public class ArTest3 {
 					bitmap[i][j] = Integer.parseInt(str2[j]);
 				}
 			}
-
-			for (int i = 0; i < 10; i++) {
-				for (int j = 0; j < 20; j++) {
-					System.out.print(bitmap[i][j]);
-				}
-				System.out.println();
-			}
+			
+			printBitmap(bitmap); //값 확인 출력
+			
 
 //		System.out.println("파일 불러오기 완료");
 
@@ -78,12 +75,7 @@ public class ArTest3 {
 				}
 			}
 
-			for (int i = 0; i < 10; i++) {
-				for (int j = 0; j < 20; j++) {
-					System.out.print(bitmap[i][j]);
-				}
-				System.out.println();
-			}
+			printBitmap(bitmap);
 
 			System.out.println("자리변경 완료");
 		}
@@ -106,5 +98,15 @@ public class ArTest3 {
 			fos.close();
 			System.out.println("저장 완료");
 		}
+	}
+
+	private static void printBitmap(int[][] a) {
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 20; j++) {
+				System.out.print(a[i][j]);
+			}
+			System.out.println();
+		}
+		
 	}
 }
