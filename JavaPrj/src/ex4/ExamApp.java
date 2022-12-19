@@ -12,7 +12,6 @@ public class ExamApp {
 		
 		printExam(exam1);
 		
-		
 		Exam[] exams = new Exam[3];
 		
 		exams[0] = new Exam();

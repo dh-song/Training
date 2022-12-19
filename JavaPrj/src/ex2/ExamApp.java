@@ -72,9 +72,9 @@ public class ExamApp {
 
 				Scanner scanner = new Scanner(System.in); // 문자열 입력
 
-				System.out.println("┌───────────────────┐");
-				System.out.println("│      성적 입력       │");
-				System.out.println("└───────────────────┘\n");
+				System.out.println("┌────────┐");
+				System.out.println("│      성적 입력      │");
+				System.out.println("└────────┘\n");
 
 
 				// kor1 = System.in.read(); 입력은 문자 하나 아스키 값을 저장, 비어있을 때 프롬프트 팝업
@@ -232,9 +232,9 @@ public class ExamApp {
 				// -----------------------------------------
 
 				// 시스템 출력
-				System.out.println("┌───────────────────┐");
-				System.out.println("│      성적 출력       │");
-				System.out.println("└───────────────────┘\n");
+				System.out.println("┌────────┐");
+				System.out.println("│      성적 출력      │");
+				System.out.println("└────────┘\n");
 				for (int j = 0; j < kors.length; j++) {
 					int total = 0;
 					for (int i = 0; i < 3; i++) {

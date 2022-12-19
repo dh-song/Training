@@ -48,7 +48,7 @@ public class ArTest5 {
 	}
 }
 	
-
+	// -----------------------------------함수 구역
 	private static char[][] createDoubleArray(int[][] map) {
 		int y = map.length * 2;
 		int x = map[0].length * 2;
@@ -56,8 +56,7 @@ public class ArTest5 {
 		return board;
 	}
 
-	// -----------------------------------함수 구역
-
+	
 	private static int[][] createArray(String str) throws IOException {
 		FileInputStream fis = new FileInputStream(str);
 		Scanner scan = new Scanner(fis);
