@@ -6,13 +6,21 @@ public class Exam {
 	private int kor;
 	private int eng;
 	private int math;
-	
-	public Exam(){ //new 생성자, 초기화
-		kor = 10;
-		eng = 10;
-		math = 10;
+
+	public Exam() { // new 생성자, 초기화
+//		kor=30; 불가능
+		this(0, 0, 0); //생성자는 이름이 없기 때문에 this 사용
+//		kor=30; 생성된 후라 가능
 	}
 	
+	public Exam(int kor, int eng, int math) { //생성자 오버로드
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
+
+
+
 	public void input() {
 		Scanner scanner = new Scanner(System.in); // 문자열 입력
 
@@ -40,12 +48,32 @@ public class Exam {
 	}
 
 	public void print() {
+		print('-');
+
+	}
+
+	public void print(char ch) {
+		print(ch, 30);
+	}
+
+	public void print(char ch, int leng) {
+		int total = total();
+		double avg = avg();
 		System.out.printf("kor: %d\n", this.kor);
 		System.out.printf("eng: %d\n", this.eng);
 		System.out.printf("math: %d\n", this.math);
-		System.out.println("-------------");
-		
+		for (int i = 0; i < leng; i++) {
+			System.out.printf("%c", ch);
+		}
+
 	}
 
+	private double avg() {
+		return total() / 3.0;
+	}
 
+	private int total() {
+		return kor + eng + math ;
+
+}
 }
