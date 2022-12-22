@@ -13,7 +13,6 @@ public class SubwayController {
 		System.out.println("---- Welcome Subway ----");
 
 		ss.run();
-		//2중 배열 사용 안 해봄.
 	}
 
 }
