@@ -4,18 +4,16 @@ import java.util.Scanner;
 
 public class SubwayService { // 주석은 1차 배열 코드, 유효성 검사는 안 함.
 	int curStation;
-	String[] stations;
-
+	int[][] subs; // 2중배열 사용
 //	int[] sub1;
 //	int[] sub2;
 //	int[] sub3;
 //	int[] sub4;
 
-	int[][] subs; // 2중배열 사용
+	
 
 	public SubwayService() {
 
-		stations = new String[] { "합정", "홍대입구", "신촌", "이대", "아현" };
 		curStation = 1;
 
 //		sub1 = new int[4];
@@ -126,7 +124,7 @@ public class SubwayService { // 주석은 1차 배열 코드, 유효성 검사�
 	private void printStation() {
 		for (int i = 0; i < 5; i++) {
 			if (curStation - 1 != i) {
-				System.out.printf("%d.(%s) ", i + 1, stations[i]);
+				System.out.printf("%d.(%s) ", i + 1, stationName(i));
 			}
 		}
 
