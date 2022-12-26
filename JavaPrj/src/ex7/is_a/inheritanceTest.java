@@ -13,15 +13,7 @@ public class inheritanceTest {
 		System.out.println(exam2.avg());
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		
 		
 //		// 성적 객체를 준비한다.		
