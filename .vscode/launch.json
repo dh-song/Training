@@ -1,0 +1,301 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "exSort.Program",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Exc",
+            "request": "launch",
+            "mainClass": "Exc",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ElevatorController",
+            "request": "launch",
+            "mainClass": "com.elevator.service.ElevatorController",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "SubwayController",
+            "request": "launch",
+            "mainClass": "com.test.service.SubwayController",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "FileIOApp",
+            "request": "launch",
+            "mainClass": "ex1.FileIOApp",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ArrayTest",
+            "request": "launch",
+            "mainClass": "ex1.test.ArrayTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ArrayTest2Sort",
+            "request": "launch",
+            "mainClass": "ex1.test.ArrayTest2Sort",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "BasicFunction",
+            "request": "launch",
+            "mainClass": "ex1.test.BasicFunction",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "FileIOApp(1)",
+            "request": "launch",
+            "mainClass": "ex1.test.FileIOApp",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ForTest",
+            "request": "launch",
+            "mainClass": "ex1.test.ForTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "OmikTest",
+            "request": "launch",
+            "mainClass": "ex1.test.OmikTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "OmikTest2",
+            "request": "launch",
+            "mainClass": "ex1.test.OmikTest2",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "OmikTest3",
+            "request": "launch",
+            "mainClass": "ex1.test.OmikTest3",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "OmockTestFunction",
+            "request": "launch",
+            "mainClass": "ex1.test.OmockTestFunction",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "StringTest",
+            "request": "launch",
+            "mainClass": "ex1.test.StringTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ifTest",
+            "request": "launch",
+            "mainClass": "ex1.test.ifTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ExamApp",
+            "request": "launch",
+            "mainClass": "ex2.ExamApp",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ex1",
+            "request": "launch",
+            "mainClass": "ex2.ex1",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ClassTest",
+            "request": "launch",
+            "mainClass": "ex4.ClassTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ExamApp(1)",
+            "request": "launch",
+            "mainClass": "ex4.ExamApp",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "CapsuleTest",
+            "request": "launch",
+            "mainClass": "ex5.CapsuleTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "CapsuleTest(1)",
+            "request": "launch",
+            "mainClass": "ex6.has_a.CapsuleTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "GameApp",
+            "request": "launch",
+            "mainClass": "ex7.is_a.GameApp",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "inheritanceTest",
+            "request": "launch",
+            "mainClass": "ex7.is_a.inheritanceTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "WrapperTest",
+            "request": "launch",
+            "mainClass": "ex8.wrapper.WrapperTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "LottoTest",
+            "request": "launch",
+            "mainClass": "jtest.LottoTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ArTest",
+            "request": "launch",
+            "mainClass": "test.ArTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ArTest2",
+            "request": "launch",
+            "mainClass": "test.ArTest2",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ArTest3",
+            "request": "launch",
+            "mainClass": "test.ArTest3",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ArTest4",
+            "request": "launch",
+            "mainClass": "test.ArTest4",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ArTest5",
+            "request": "launch",
+            "mainClass": "test.ArTest5",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Artr",
+            "request": "launch",
+            "mainClass": "test.Artr",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "HashTest",
+            "request": "launch",
+            "mainClass": "test.HashTest",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "ListMap",
+            "request": "launch",
+            "mainClass": "test.ListMap",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Seriallize",
+            "request": "launch",
+            "mainClass": "test.Seriallize",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Test12_20",
+            "request": "launch",
+            "mainClass": "test.Test12_20",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Test6",
+            "request": "launch",
+            "mainClass": "test.Test6",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Tower",
+            "request": "launch",
+            "mainClass": "test.Tower",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "App(1)",
+            "request": "launch",
+            "mainClass": "testClass.App",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Memo",
+            "request": "launch",
+            "mainClass": "testClass.Memo",
+            "projectName": "JavaPrj"
+        }
+    ]
+}
