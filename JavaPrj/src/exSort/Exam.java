@@ -1,6 +1,6 @@
 package exSort;
 
-public class Exam {
+public class Exam implements Comparable<Exam> {
     private int kor;
     private int eng;
     private int math;
@@ -48,6 +48,12 @@ public class Exam {
     public String toString() {
        return "Exam [kor=" + kor + ", eng=" + eng + ", math=" + math + "]";
     }
+
+   @Override
+   public int compareTo(Exam o) {
+      // TODO Auto-generated method stub
+      throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+   }
  
  
  
