@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Program2",
+            "request": "launch",
+            "mainClass": "ex9.exception.Program2",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "ex9.exception.Program",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
             "name": "Program",
             "request": "launch",
             "mainClass": "exSort.Program",
