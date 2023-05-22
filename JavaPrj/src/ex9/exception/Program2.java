@@ -11,7 +11,7 @@ public class Program2 {
         
         
         try (
-            FileOutputStream fos = new FileOutputStream("/JavaPrj/res/data3.txt");
+            FileOutputStream fos = new FileOutputStream("JavaPrj/res/data3.txt");
             PrintStream out  = new PrintStream(fos);
         ){
             out.println("hihihi hohohoho");

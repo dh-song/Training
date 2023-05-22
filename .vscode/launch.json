@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "ex9.stream.Program",
+            "projectName": "JavaPrj"
+        },
+        {
+            "type": "java",
             "name": "Program2",
             "request": "launch",
             "mainClass": "ex9.exception.Program2",

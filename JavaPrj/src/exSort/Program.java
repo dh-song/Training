@@ -10,7 +10,7 @@ public class Program { // 자바 8(컬렉션 컨트롤)
     public static void main(String[] args) throws IOException {
 
         List<Exam> list = Files
-        .lines(Path.of("/JavaPrj/res/examData.csv"))
+        .lines(Path.of("JavaPrj/res/examData.csv"))
         .skip(1) //1줄 건너뜀, 파일 상단에 스트링 스킵
         .map(line->{
             String[] tokens = line.split(",");
